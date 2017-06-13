@@ -36,28 +36,30 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/priceLabel"
-        android:gravity="center_vertical|center_horizontal">
+        android:gravity="center_vertical|center_horizontal"
+        android:weightSum="1">
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="@string/base"
-            android:textSize="30sp"
-            android:textStyle="bold"
             android:id="@+id/textView"
+            android:layout_width="122dp"
+            android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"/>
+            android:layout_marginRight="10dp"
+            android:layout_weight="0.18"
+            android:text="@string/base"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="30sp"
+            android:textStyle="bold"/>
 
         <Spinner
+            android:id="@+id/currency_spinner"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/currency_spinner"
+            android:dropDownSelector="@color/fontColour"
             android:gravity="center_horizontal"
             android:spinnerMode="dropdown"
-            android:dropDownSelector="@color/fontColour"
-            />
+            android:layout_weight="0.71"/>
 
 
     </LinearLayout>
